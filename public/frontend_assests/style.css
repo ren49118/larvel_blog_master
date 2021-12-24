@@ -1,0 +1,463 @@
+html{
+	scroll-behavior: smooth;
+}
+#productcard p{
+	padding: 0;
+	margin: 0;
+}
+#showservice{
+	/*position: relative;*/
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	background: url('img/shopcover.jpg');
+}
+#allcategory .row p{
+	padding: 0;
+	margin: 0;
+}
+#home .dropright .dropdown-toggle::after {
+	display: none;
+}
+#ad img{
+	width: 400px;
+	height: 70px;
+	border-radius: 50px;
+}
+#productcard .card{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+#productcard .icon-gp{
+	position: absolute;
+	top: 60%;
+	right: -90%;
+	/*background-color: green;*/
+}
+#productcard .card .icon-gp{
+	transition: .5s;
+	visibility: hidden;
+}
+#productcard .card:hover .icon-gp{
+	/*top: 65%;*/
+	right: 10%;
+	visibility: visible;
+}
+#productcard .card:hover a{
+	visibility: visible;
+}
+#productcard .icon-gp a{
+	display: inline-block;
+	text-decoration: none;
+	transition: .3s ease-out;
+	visibility: hidden;
+}
+#productcard .icon-gp a:nth-child(1){
+	transition-delay:.1s;
+}
+#productcard .icon-gp a:nth-child(2){
+	transition-delay:.2s;
+}
+#productcard .icon-gp a:nth-child(3){
+	transition-delay:.3s;
+}
+#productcard .icon-gp i{
+	background-color: white;
+	color: black; 
+	transition: .5s;
+	padding: 15px;
+	border-radius: 50%;
+	margin: 10px;
+	border:1px solid gray;
+}
+#productcard .icon-gp i:hover{
+	background-color: red;
+	color: white;
+	border:1px solid red;
+}
+#newproduct .title-bar .btn{
+	font-size: 14px;
+    list-style: none;
+    display: inline-block;
+    color: #111111;
+    margin-right: 35px;
+    position: relative;
+    cursor: pointer;
+}
+.section-title{
+	color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+#showservice h4{
+	font-size: 18px;
+    color: #ca1515;
+    text-transform: uppercase;
+}
+#showservice h1{
+	font-size: 80px;
+    color: #111111;
+    font-family: "Cookie", cursive;
+    margin-bottom: 15px;
+}
+#showservice .btn{
+	font-size: 14px;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    padding: 0 0 3px;
+    display: inline-block;
+    border-bottom: 3px solid #ca1515;
+}
+.section-title:after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 70px;
+    background: #ca1515;
+    content: "";
+}
+#allcategory .card{
+	font-family: 'Montserrat', sans-serif;
+	color: #111;
+}
+#support h4{
+	color: #111;
+    font-weight: 600;
+    font-size:16px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat',sans-serif;
+}
+#discount span{
+	font-size: 12px;
+    color: #111111;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#discount h2{
+	font-size: 60px;
+    color: #ca1515;
+    font-family: "Cookie", cursive;
+    line-height: 46px;
+    margin-bottom: 10px;
+}
+#discount h5 span{
+	font-size: 17px;
+    color: #111111;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 2px;
+}
+#discount h5 {
+    color: #ca1515;
+    font-weight: 700;
+}
+#discount .content:after{
+	position: absolute;
+    left: 50%;
+    top: -38px;
+    height: 183px;
+    width: 183px;
+    background: #ffffff;
+    content: "";
+    border-radius: 50%;
+    z-index: -1;
+    margin-left: -91.5px;
+}
+#subcategory .col-12{
+	position: relative;
+	width: 229px;
+	height: 320px;
+	transition: .5s;
+}
+#subcategory .col-12:hover .content {
+	transform: translateY(0px);
+	visibility: visible;
+		
+}
+#subcategory .col-12 img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+#subcategory .content{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateY(-200px);
+	background-color: white;
+	transition: .5s;
+	visibility: hidden;
+	transition: .5s;
+}
+#subcategory .content .data{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#subcategory .content i{
+	font-size: 30px;
+    color: #0d0d0d;
+}
+#subcategory .content a{
+	font-size: 30px;
+    color: #0d0d0d;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+    transform: translateY(100px);
+    transition: .5s;
+    letter-spacing: 10px;
+    visibility: hidden;
+}
+#subcategory .col-12:hover a{
+	visibility: visible;
+	transform: translateY(0px);
+	letter-spacing: 2px;
+	font-size: 16px;
+	color: #0275d8;
+}
+#subcategory .col-12 a:hover{
+	letter-spacing: 1px;
+}
+#footer p{
+	font-size: 16px;
+    /*font-family: "Montserrat", sans-serif;*/
+    color: #666666;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+#footer h4{
+	color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+#footer ul{
+	padding: 0;
+}
+#footer ul li{
+	list-style: none;
+}
+#footer ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 14px;
+    color: #666666;
+    line-height: 30px;
+}
+#footer .user{
+	height: 52px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+#footer .btn{
+	font-size: 14px;
+    color: #ffffff;
+    background: #ca1515;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+#footer .icon-gp{
+	font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin-top: 20px;
+    /*background-color: green;*/
+}
+#footer .t{
+	font-weight: 400;
+	color: #212529;
+	background-color: #e1e1e1;
+	padding: 10px;
+	border-radius: 50%;
+	font-size: 1rem;
+	margin-right: 10px;
+}
+#discount .hello{
+	font-size: 14px;
+	color: #111111;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	padding: 0 0 3px;
+	display: inline-block;
+}
+
+#discount .hello:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 100%;
+	background: #ca1515;
+	content: "";
+}
+#check .del{
+	font-size: 15px;
+	border-radius: 50%;
+	padding: 10px 14px;
+	border:none;
+	margin-right: 10px;
+	transition: .5s;
+}
+#check .del:hover{
+	color: white;
+	background-color: red;
+}
+#productcard .card{
+	transition: .5s;
+}
+#productcard .card:hover{
+	box-shadow: 2px 8px 15px black;
+}
+#big{
+	position: relative;
+	width: 669px;
+	height: 638px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#small .col-12{
+	position: relative;
+	width: 329px;
+	height: 320px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#big .img-div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+}
+#small{
+	padding-left: 10px;
+}
+#small .img-div{
+	position: absolute;
+	width: 98%;
+	height: 98%;
+	left: 0;
+	right: 0;
+}
+#big .img-div img,#small .img-div img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+}
+#big .content,#small .content{
+	z-index: 1;
+	/*background:rgba(255,255,255,.3);*/
+	padding: 10px 20px;
+}
+#small .content{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+#big .content h4{
+	font-family: "Cookie", cursive;
+    color: #111111;
+    margin-bottom: 5px;
+    font-size: 70px;
+}
+#small h4{
+	/*font-family: "Cookie", cursive;*/
+	font-size: 24px;
+	/*font-weight:100;*/
+}
+#big .content{
+	padding: 20px 40px;
+}
+#big p{
+	font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 0 15px 0;
+}
+.rating i{
+	font-size: 13px;
+}
+#home a{
+	font-size: 14px;
+    color: #111111;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    padding: 0 0 3px;
+    display: inline-block;
+}
+#home a:after{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #ca1515;
+    content: "";
+}
+#small h4{
+	color: #111111;
+	font-weight: 700;
+}
+#small p{
+	font-size: 14px;
+    /*font-family: "Montserrat", sans-serif;*/
+    color: black;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+#productcard .name{
+	font-size: 20px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+#productcard .card-img-top{
+	overflow: hidden;
+}
+#productcard .card-img-top img{
+	transition: .5s;
+}
+#productcard .card:hover img{
+	transform: scale(1.1);
+}
